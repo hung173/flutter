@@ -33,7 +33,7 @@ jobs:
         working-directory: build/ios/iphoneos
 
       - name: Upload binaries to release
-        uses: hung173/upload-release-action@v2
+        uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: build/ios/iphoneos/FlutterIpaExport.ipa
